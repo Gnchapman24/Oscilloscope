@@ -1,0 +1,2 @@
+@E: CS168 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":56:13:56:13|Port dp_1 does not exist
+

@@ -16,8 +16,8 @@
 
 module TopCounter (
     input  logic clk,
-    output logic [7:0] svseg_1,
-    output logic [7:0] svseg_2
+    output logic [6:0] svseg_1,
+    output logic [6:0] svseg_2
 );
 
     logic [24:0] clk_count = 25'd0;
@@ -53,8 +53,6 @@ module TopCounter (
     SevenSegDriver display (
         .num_1(ones),
         .num_2(tens),
-        .dp_1(1'b1), 
-        .dp_2(1'b1), 
         .svseg_1(svseg_1),
         .svseg_2(svseg_2)
     );

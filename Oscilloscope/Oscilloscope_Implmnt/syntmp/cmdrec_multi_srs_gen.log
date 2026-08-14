@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_comp.srs  -osyn  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_mult.srs  -log  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_comp.srs|io:i|time:1786714780|size:4425|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_mult.srs|io:o|time:1786714781|size:3273|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_multi_srs_gen.srr|io:o|time:1786714781|size:729|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1786455139|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1786455140|size:3947520|exec:1

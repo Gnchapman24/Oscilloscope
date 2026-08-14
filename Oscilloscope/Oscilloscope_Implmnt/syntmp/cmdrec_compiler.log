@@ -1,0 +1,13 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\c_hdl.exe  -osyn  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_comp.srs  -hdllog  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -primux -fixsmult -infer_seqShift -ice -sdff_counter -nram -divnmod -nostructver   -I C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\  -I C:\lscc\iCEcube2.2020.12\synpbase\lib   -v2001  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -encrypt  -pro  -dmgen  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work -fsysv C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv -lib work -fsysv C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv -lib work -fsysv C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv 
+rc:0 success:1 runtime:1
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_comp.srs|io:o|time:1786714780|size:4425|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_compiler.srr|io:o|time:1786714780|size:3562|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1786455141|size:224837|exec:0
+file:-fsysv|io:i|time:0|size:0|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv|io:i|time:1786714569|size:1393|exec:0
+file:-fsysv|io:i|time:0|size:0|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv|io:i|time:1786714569|size:989|exec:0
+file:-fsysv|io:i|time:0|size:0|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv|io:i|time:1786714772|size:1427|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\c_hdl.exe|io:i|time:1786455138|size:1338368|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\c_hdl.exe|io:i|time:1786455139|size:1754112|exec:1

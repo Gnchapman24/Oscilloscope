@@ -1,0 +1,71 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40HX1KVQ100 (Lattice)
+
+--------------------------------------------------------------------------
+########   Utilization report for  Top level view:   TopCounter   ########
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     34                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block TopCounter:	34 (22.82 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       62                 100 %                
+CARRYS     30                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block TopCounter:	92 (61.74 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     15                 100 %                
+=================================================
+Total IO PADS in the block TopCounter:	15 (10.07 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   SevenSegDriver   ########
+Instance path:   TopCounter.SevenSegDriver                          
+====================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     19                 30.6 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block TopCounter.SevenSegDriver:	19 (12.75 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   NumToSevenSeg   ########
+Instance path:   SevenSegDriver.NumToSevenSeg                      
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     7                  11.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block SevenSegDriver.NumToSevenSeg:	7 (4.70 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   NumToSevenSeg_0   ########
+Instance path:   SevenSegDriver.NumToSevenSeg_0                      
+=====================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     12                 19.4 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block SevenSegDriver.NumToSevenSeg_0:	12 (8.05 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

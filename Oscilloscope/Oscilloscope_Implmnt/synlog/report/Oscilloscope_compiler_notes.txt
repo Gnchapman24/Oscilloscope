@@ -1,0 +1,9 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv":18:7:18:19|Synthesizing module NumToSevenSeg in library work.
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv":21:7:21:20|Synthesizing module SevenSegDriver in library work.
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Synthesizing module TopCounter in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
+

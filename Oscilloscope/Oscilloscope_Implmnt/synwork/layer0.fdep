@@ -1,0 +1,27 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Grant\\Projects\\FPGA\\Oscilloscope\\Oscilloscope\\Oscilloscope_Implmnt\\synwork\\Oscilloscope_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|C:\\Users\\Grant\\Projects\\FPGA\\Oscilloscope\\Oscilloscope\\|-I|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_ver.exe":1786455139
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v":1786455141
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\hypermods.v":1786455142
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\umr_capim.v":1786455142
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_objects.v":1786455142
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1786455142
+#CUR:"C:\\Users\\Grant\\Projects\\FPGA\\Oscilloscope\\SevenSegment\\NumToSevenSeg.sv":1786714569
+#CUR:"C:\\Users\\Grant\\Projects\\FPGA\\Oscilloscope\\SevenSegment\\SevenSegDriver.sv":1786714569
+#CUR:"C:\\Users\\Grant\\Projects\\FPGA\\Oscilloscope\\SevenSegment\\TopCounter.sv":1786714772
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv" verilog
+1			"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv" verilog
+2			"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 0
+2 1
+#Dependency Lists(Users Of)
+0 1
+1 2
+2 -1
+#Design Unit to File Association
+module work NumToSevenSeg 0
+module work SevenSegDriver 1
+module work TopCounter 2

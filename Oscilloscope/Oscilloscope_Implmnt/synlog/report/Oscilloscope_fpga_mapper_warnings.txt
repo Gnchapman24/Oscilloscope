@@ -1,0 +1,9 @@
+@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_2.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_1.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_2.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_1.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|User-specified initial value defined for instance tens[3:0] is being ignored. 
+@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":28:4:28:12|User-specified initial value defined for instance clk_count[24:0] is being ignored. 
+@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|User-specified initial value defined for instance ones[3:0] is being ignored. 
+@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":28:4:28:12|User-specified initial value defined for instance enable_1hz is being ignored. 
+@W: MT420 |Found inferred clock TopCounter|clk with period 6.62ns. Please declare a user-defined clock on object "p:clk"
