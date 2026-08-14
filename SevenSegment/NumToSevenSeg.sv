@@ -12,12 +12,12 @@
     
     Revision History: 
     Revision 1.0  - Initial Design.
+    Revision 1.01 - Removed decimal point (not compatible with board).
 */
 
 module NumToSevenSeg(
     input  logic [3:0] num,
-    input  logic       dp,
-    output logic [7:0] svseg
+    output logic [6:0] svseg
 );
     typedef enum logic [6:0] {
         ZERO  = 7'b0000001,
@@ -51,6 +51,6 @@ module NumToSevenSeg(
         endcase
     end
 
-    assign svseg = {dp, state};
+    assign svseg = state;
 
 endmodule

@@ -6,8 +6,6 @@
 struct TestCase {
     uint8_t num_1;
     uint8_t num_2;
-    uint8_t dp_1;
-    uint8_t dp_2;
     uint8_t expected_svseg_1;
     uint8_t expected_svseg_2;
 };
@@ -17,13 +15,13 @@ int main(int argc, char** argv) {
     VSevenSegDriver* dut = new VSevenSegDriver;
 
     std::vector<TestCase> tests = {
-        // num_1, num_2, dp_1, dp_2, expected_svseg_1, expected_svseg_2
-        {0,  1,  0, 1, 0x01, 0xCF}, // Test digits 0 and 1. Test dp_2 on.
-        {2,  3,  1, 0, 0x92, 0x06}, // Test digits 2 and 3. Test dp_1 on.
-        {4,  5,  0, 0, 0x4C, 0x24}, // Test digits 4 and 5.
-        {6,  7,  0, 0, 0x20, 0x0F}, // Test digits 6 and 7.
-        {8,  9,  0, 0, 0x00, 0x04}, // Test digits 8 and 9.
-        {10, 15, 0, 1, 0x7F, 0xFF}  // Test out-of-bounds inputs.
+        // num_1, num_2, expected_svseg_1, expected_svseg_2
+        {0,  1,  0x01, 0x4F}, // Test digits 0 and 1.
+        {2,  3,  0x12, 0x06}, // Test digits 2 and 3.
+        {4,  5,  0x4C, 0x24}, // Test digits 4 and 5.
+        {6,  7,  0x20, 0x0F}, // Test digits 6 and 7.
+        {8,  9,  0x00, 0x04}, // Test digits 8 and 9.
+        {10, 15, 0x7F, 0x7F}  // Test out-of-bounds inputs.
     };
 
     int errors = 0;
@@ -31,8 +29,6 @@ int main(int argc, char** argv) {
     for (size_t i = 0; i < tests.size(); ++i) {
         dut->num_1 = tests[i].num_1;
         dut->num_2 = tests[i].num_2;
-        dut->dp_1 = tests[i].dp_1;
-        dut->dp_2 = tests[i].dp_2;
 
         dut->eval();
 
