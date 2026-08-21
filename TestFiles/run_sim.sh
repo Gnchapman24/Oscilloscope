@@ -2,8 +2,8 @@
 
 set -e
 
-MODULE_NAME="SevenSegDriver"
-TESTBENCH="SevenSegDriver_sim.cpp"
+MODULE_NAME="PmodAD1Ctrl"
+TESTBENCH="PmodAD1Ctrl_sim.cpp"
 OBJ_DIR="obj_dir"
 
 echo "=== Cleaning old build artifacts ==="
