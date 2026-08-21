@@ -14,10 +14,12 @@ void setup() {
 }
 
 void loop() { 
-  for (int i = 0; i < 256; i++) {
+  for (int i = 0; i < 256; i = i + 16) {
     analogWrite(signalPin, i);
     Serial.print("Supplied value: ");
     Serial.print( (((float) i)/256) * MAX_VOLTAGE);
+
+    delay(500);
 
     Serial.print(" | Read voltage: ");
     Serial.println( (((float) analogRead(analogPin)) / 1024) * MAX_VOLTAGE);
