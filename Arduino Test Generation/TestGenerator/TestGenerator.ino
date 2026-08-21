@@ -20,6 +20,6 @@ void loop() {
     Serial.print( (((float) i)/256) * MAX_VOLTAGE);
 
     Serial.print(" | Read voltage: ");
-    Serial.println(analogRead(analogPin));
+    Serial.println( (((float) analogRead(analogPin)) / 1024) * MAX_VOLTAGE);
   }
 }
