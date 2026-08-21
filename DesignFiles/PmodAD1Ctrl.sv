@@ -30,8 +30,8 @@ module PmodAD1Ctrl (
 
     logic        clk_pmod;
     logic [4:0]  bit_count;
-    logic [15:0] shift_reg_0;
-    logic [15:0] shift_reg_1;
+    logic [11:0] shift_reg_0;
+    logic [11:0] shift_reg_1;
 
     // Divide 25 MHz clock to 12.5 MHz. Maximum ADC clock is 20MHz.
     always_ff @(posedge clk_fpga or negedge rst_n) begin
@@ -53,8 +53,8 @@ module PmodAD1Ctrl (
             valid       <= 1'b0;
             data_ch0    <= 12'd0;
             data_ch1    <= 12'd0;
-            shift_reg_0 <= 16'd0;
-            shift_reg_0 <= 16'd0;
+            shift_reg_0 <= 12'd0;
+            shift_reg_0 <= 12'd0;
         end else begin
             if (bit_count == 5'd0) begin
                 //Start recieving
@@ -63,14 +63,14 @@ module PmodAD1Ctrl (
                 bit_count <= bit_count + 1'b1;
             end else if (bit_count <= 5'd16) begin
                 //Continue recieving
-                shift_reg_0 <= {shift_reg_0[14:0], miso_0};
-                shift_reg_1 <= {shift_reg_1[14:0], miso_1};
+                shift_reg_0 <= {shift_reg_0[10:0], miso_0};
+                shift_reg_1 <= {shift_reg_1[10:0], miso_1};
                 bit_count   <= bit_count + 1'b1;
             end else begin
                 //End recieving
                 cs_n      <= 1'b1;
-                data_ch0  <= shift_reg_0[11:0];
-                data_ch1  <= shift_reg_1[11:0];
+                data_ch0  <= shift_reg_0;
+                data_ch1  <= shift_reg_1;
                 valid     <= 1'b1;
                 bit_count <= 5'd0;
             end
