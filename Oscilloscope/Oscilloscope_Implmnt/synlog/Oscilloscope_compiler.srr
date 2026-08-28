@@ -11,16 +11,14 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv" (library work)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv" (library work)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv" (library work)
+@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv" (library work)
+@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv" (library work)
 Verilog syntax check successful!
-Selecting top level module TopCounter
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv":18:7:18:19|Synthesizing module NumToSevenSeg in library work.
+Selecting top level module PmodAD1_top
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":19:7:19:17|Synthesizing module PmodAD1Ctrl in library work.
 
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv":21:7:21:20|Synthesizing module SevenSegDriver in library work.
-
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Synthesizing module TopCounter in library work.
+@A: CL282 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":49:4:49:12|Feedback mux created for signal shift_reg_1[11:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Synthesizing module PmodAD1_top in library work.
 
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
@@ -28,20 +26,20 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]
 @END
@@ -51,6 +49,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]

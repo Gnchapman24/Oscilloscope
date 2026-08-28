@@ -3,9 +3,8 @@
 #--  Project file C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\scratchproject.prs
 
 #project files
-add_file -verilog -vlog_std sysv "C:/Users/Grant/Projects/FPGA/Oscilloscope/SevenSegment/NumToSevenSeg.sv"
-add_file -verilog -vlog_std sysv "C:/Users/Grant/Projects/FPGA/Oscilloscope/SevenSegment/SevenSegDriver.sv"
-add_file -verilog -vlog_std sysv "C:/Users/Grant/Projects/FPGA/Oscilloscope/SevenSegment/TopCounter.sv"
+add_file -verilog -vlog_std sysv "C:/Users/Grant/Projects/FPGA/Oscilloscope/DesignFiles/PmodAD1Ctrl.sv"
+add_file -verilog -vlog_std sysv "C:/Users/Grant/Projects/FPGA/Oscilloscope/DesignFiles/PmodAD1_top.sv"
 
 
 

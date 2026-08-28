@@ -1,4 +1,4 @@
-# Fri Aug 14 09:39:41 2026
+# Fri Aug 28 16:55:25 2026
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -23,10 +23,12 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance data_ch1[11:0] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance valid (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
-syn_allowed_resources : blockrams=16  set on top level netlist TopCounter
+syn_allowed_resources : blockrams=16  set on top level netlist PmodAD1_top
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
@@ -35,19 +37,32 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start              Requested     Requested     Clock        Clock                     Clock
-Clock              Frequency     Period        Type         Group                     Load 
--------------------------------------------------------------------------------------------
-TopCounter|clk     171.0 MHz     5.849         inferred     Autoconstr_clkgroup_0     34   
-===========================================================================================
+Start                                  Requested     Requested     Clock                              Clock                     Clock
+Clock                                  Frequency     Period        Type                               Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------
+PmodAD1Ctrl|clk_pmod_derived_clock     1.0 MHz       1000.000      derived (from PmodAD1_top|clk)     Autoconstr_clkgroup_0     42   
+PmodAD1_top|clk                        1.0 MHz       1000.000      inferred                           Autoconstr_clkgroup_0     1    
+=====================================================================================================================================
 
-@W: MT529 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|Found inferred clock TopCounter|clk which controls 34 sequential elements including tens[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":37:4:37:12|Found inferred clock PmodAD1_top|clk which controls 1 sequential elements including ctrl.clk_pmod. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[11] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[10] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[9] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[8] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[7] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[6] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[5] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[4] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[3] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[2] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[1] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[0] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 None
 None
 
@@ -58,6 +73,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Aug 14 09:39:42 2026
+# Fri Aug 28 16:55:25 2026
 
 ###########################################################]

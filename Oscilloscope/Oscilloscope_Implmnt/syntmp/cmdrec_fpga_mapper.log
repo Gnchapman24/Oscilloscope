@@ -1,14 +1,14 @@
 C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt   -part iCE40HX1K  -package VQ100    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\report\Oscilloscope_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.edf   -autoconstraint  -freq 1.000   C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_prem.srd  -sap  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap  -otap  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.tap  -omap  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.map  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -sap  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap  -ologparam  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\syntmp\Oscilloscope.plg  -osyn  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.srm  -prjdir  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\  -prjname  Oscilloscope_syn  -log  C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_fpga_mapper.srr 
-rc:1 success:1 runtime:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.edf|io:o|time:1786714782|size:82134|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_prem.srd|io:i|time:1786714781|size:6225|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap|io:o|time:1786714782|size:439|exec:0
+rc:1 success:1 runtime:1
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.edf|io:o|time:1787950525|size:47844|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_prem.srd|io:i|time:1787950525|size:5895|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap|io:o|time:1787950525|size:855|exec:0
 file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.tap|io:o|time:0|size:0|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.map|io:o|time:1786714782|size:28|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.map|io:o|time:1787950526|size:28|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1786455141|size:224837|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap|io:o|time:1786714782|size:439|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\syntmp\Oscilloscope.plg|io:o|time:1786714782|size:498|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.srm|io:o|time:1786714782|size:18388|exec:0
-file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_fpga_mapper.srr|io:o|time:1786714782|size:28686|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap|io:o|time:1787950525|size:855|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\syntmp\Oscilloscope.plg|io:o|time:1787950526|size:507|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.srm|io:o|time:1787950525|size:10513|exec:0
+file:C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_fpga_mapper.srr|io:o|time:1787950526|size:25065|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin\m_generic.exe|io:i|time:1786455139|size:17853440|exec:1
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe|io:i|time:1786455139|size:32355840|exec:1

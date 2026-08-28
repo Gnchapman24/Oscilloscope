@@ -1,8 +1,9 @@
 [VIC]
-CO2_cascade_=ltout:in0
-display_digit_2_svseg_1_6_0__tens_0_sqmuxa_1_s_0_cascade_=ltout:in0
-ones5_cascade_=ltout:in1
-tens6_cascade_=ltout:in0
-tens_0_sqmuxa_1_cascade_=ltout:in1
-un1_tens_1_ac0_3_0_0_cascade_=ltout:in2
-un1_tens_1_ac0_3_cascade_=ltout:in3
+ctrl.N_13_mux_1_cascade_=ltout:in0
+ctrl.N_13_mux_cascade_=ltout:in0
+ctrl.N_15_0_cascade_=ltout:in1
+ctrl.bit_count_e_1_4_cascade_=ltout:in0
+ctrl.bit_count_fast_RNI04N21Z0Z_1_cascade_=ltout:in0
+ctrl.cs_n_RNOZ0Z_1_cascade_=ltout:in1
+led1lto9_i_a2_5_cascade_=ltout:in2
+led1lto9_i_a2_6_cascade_=ltout:in0

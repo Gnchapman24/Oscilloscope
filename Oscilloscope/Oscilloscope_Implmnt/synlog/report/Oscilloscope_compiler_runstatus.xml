@@ -14,7 +14,7 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>8</data>
+  <data>7</data>
   <report_link name="more"><data>C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\report\Oscilloscope_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
@@ -29,13 +29,13 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>00h:00m:00s</data>
+  <data>00h:00m:01s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1786714780</data>
+  <data type="timestamp">1787950523</data>
   </info>
 			</job_info>
 </job_run_status>

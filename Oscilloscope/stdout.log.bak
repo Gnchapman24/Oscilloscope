@@ -4,7 +4,7 @@ Running in Lattice mode
 Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\iCEcube2.2020.12\synpbase
 Hostname:    GRANT-PC
-Date:        Fri Aug 14 09:38:57 2026
+Date:        Fri Aug 28 16:54:43 2026
 Version:     L-2016.09L+ice40
 
 Arguments:   -product synplify_pro -batch Oscilloscope_syn.prj
@@ -20,19 +20,19 @@ Running: Oscilloscope_Implmnt in foreground
 Running Oscilloscope_syn|Oscilloscope_Implmnt
 
 Running: compile (Compile) on Oscilloscope_syn|Oscilloscope_Implmnt
-# Fri Aug 14 09:38:57 2026
+# Fri Aug 28 16:54:43 2026
 
 Running: compile_flow (Compile Process) on Oscilloscope_syn|Oscilloscope_Implmnt
-# Fri Aug 14 09:38:57 2026
+# Fri Aug 28 16:54:43 2026
 
 Running: compiler (Compile Input) on Oscilloscope_syn|Oscilloscope_Implmnt
-# Fri Aug 14 09:38:57 2026
+# Fri Aug 28 16:54:43 2026
 compiler exited with errors
 Job failed on: Oscilloscope_syn|Oscilloscope_Implmnt
 
 Job: "compiler" terminated with error status: 2
 See log file: "C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synlog\Oscilloscope_compiler.srr"
-# Fri Aug 14 09:38:57 2026
+# Fri Aug 28 16:54:43 2026
 
 Return Code: 2
 Run Time:00h:00m:00s

@@ -1,7 +1,6 @@
-Selecting top level module TopCounter
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv":18:7:18:19|Synthesizing module NumToSevenSeg in library work.
+Selecting top level module PmodAD1_top
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":19:7:19:17|Synthesizing module PmodAD1Ctrl in library work.
 
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv":21:7:21:20|Synthesizing module SevenSegDriver in library work.
-
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Synthesizing module TopCounter in library work.
+@A: CL282 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":49:4:49:12|Feedback mux created for signal shift_reg_1[11:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Synthesizing module PmodAD1_top in library work.
 

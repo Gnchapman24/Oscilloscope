@@ -1,0 +1,6 @@
+OUTPUT sclk 	 location (13, 11, 1) 	 65 	 
+INPUT  miso_0 	 location (13, 9, 0) 	 63 	 
+INPUT  rst_p 	 location (13, 4, 1) 	 53 	 
+OUTPUT led1 	 location (13, 6, 1) 	 56 	 
+OUTPUT cs_n 	 location (13, 11, 0) 	 64 	 
+INPUT  clk 	 location (0, 8, 1) 	 15 	 

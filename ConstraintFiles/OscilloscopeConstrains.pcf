@@ -1,0 +1,19 @@
+### Main FPGA Clock
+set_io clk 15
+
+### LED Outputs
+set_io led1 56
+
+### Button Resets -- SW1
+set_io rst_p 53
+
+# --- PmodAD1 Interface (PMOD Connector Pins) ---
+# Assuming standard Pmod mapping to Go Board PMOD header pins:
+# Pin 1: SCLK
+# Pin 2: CS_N
+# Pin 3: MISO_0 (Data 0)
+# Pin 4: MISO_1 (Data 1)
+set_io sclk       65
+set_io cs_n       64
+set_io miso_0     63
+set_io miso_1     62

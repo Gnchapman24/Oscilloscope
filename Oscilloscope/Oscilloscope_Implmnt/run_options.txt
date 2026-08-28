@@ -1,13 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\run_options.txt
-#--  Written on Fri Aug 14 09:39:40 2026
+#--  Written on Fri Aug 28 16:55:23 2026
 
 
 #project files
-add_file -verilog -vlog_std sysv "../SevenSegment/NumToSevenSeg.sv"
-add_file -verilog -vlog_std sysv "../SevenSegment/SevenSegDriver.sv"
-add_file -verilog -vlog_std sysv "../SevenSegment/TopCounter.sv"
+add_file -verilog -vlog_std sysv "../DesignFiles/PmodAD1Ctrl.sv"
+add_file -verilog -vlog_std sysv "../DesignFiles/PmodAD1_top.sv"
 
 
 

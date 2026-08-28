@@ -1,10 +1,9 @@
 #-- Synopsys, Inc.
 #-- Project file C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_syn.prj
 #project files
-add_file -verilog -lib work "../SevenSegment/NumToSevenSeg.sv"
-add_file -verilog -lib work "../SevenSegment/SevenSegDriver.sv"
-add_file -verilog -lib work "../SevenSegment/TopCounter.sv"
 
+add_file -verilog -lib work "../DesignFiles/PmodAD1Ctrl.sv" 
+add_file -verilog -lib work "../DesignFiles/PmodAD1_top.sv" 
 #implementation: "Oscilloscope_Implmnt"
 impl -add Oscilloscope_Implmnt -type fpga
 
@@ -54,5 +53,5 @@ set_option -write_apr_constraint 1
 project -result_format "edif"
 project -result_file ./Oscilloscope_Implmnt/Oscilloscope.edf
 project -log_file "./Oscilloscope_Implmnt/Oscilloscope.srr"
-impl -active "Oscilloscope_Implmnt"
+impl -active Oscilloscope_Implmnt
 project -run synthesis -clean

@@ -1,2 +1,2 @@
-@E: CS168 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":56:13:56:13|Port dp_1 does not exist
+@E: CG381 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":47:16:47:16|Event statement illegal within always_comb
 

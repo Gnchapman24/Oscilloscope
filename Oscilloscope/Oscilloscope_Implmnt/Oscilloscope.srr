@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: GRANT-PC
 
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 #Implementation: Oscilloscope_Implmnt
 
@@ -20,16 +20,14 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv" (library work)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv" (library work)
-@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv" (library work)
+@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv" (library work)
+@I::"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv" (library work)
 Verilog syntax check successful!
-Selecting top level module TopCounter
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\NumToSevenSeg.sv":18:7:18:19|Synthesizing module NumToSevenSeg in library work.
+Selecting top level module PmodAD1_top
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":19:7:19:17|Synthesizing module PmodAD1Ctrl in library work.
 
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\SevenSegDriver.sv":21:7:21:20|Synthesizing module SevenSegDriver in library work.
-
-@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Synthesizing module TopCounter in library work.
+@A: CL282 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1Ctrl.sv":49:4:49:12|Feedback mux created for signal shift_reg_1[11:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Synthesizing module PmodAD1_top in library work.
 
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
@@ -37,20 +35,20 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]
 @END
@@ -60,25 +58,26 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:40 2026
+# Fri Aug 28 16:55:23 2026
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
-@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\SevenSegment\TopCounter.sv":17:7:17:16|Selected library: work cell: TopCounter view verilog as top level
+File C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\synwork\Oscilloscope_comp.srs changed - recompiling
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
+@N: NF107 :"C:\Users\Grant\Projects\FPGA\Oscilloscope\DesignFiles\PmodAD1_top.sv":19:11:19:21|Selected library: work cell: PmodAD1_top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Aug 14 09:39:41 2026
+# Fri Aug 28 16:55:25 2026
 
 ###########################################################]
 Pre-mapping Report
 
-# Fri Aug 14 09:39:41 2026
+# Fri Aug 28 16:55:25 2026
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -103,10 +102,12 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance data_ch1[11:0] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance valid (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
-syn_allowed_resources : blockrams=16  set on top level netlist TopCounter
+syn_allowed_resources : blockrams=16  set on top level netlist PmodAD1_top
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
@@ -115,19 +116,32 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start              Requested     Requested     Clock        Clock                     Clock
-Clock              Frequency     Period        Type         Group                     Load 
--------------------------------------------------------------------------------------------
-TopCounter|clk     171.0 MHz     5.849         inferred     Autoconstr_clkgroup_0     34   
-===========================================================================================
+Start                                  Requested     Requested     Clock                              Clock                     Clock
+Clock                                  Frequency     Period        Type                               Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------
+PmodAD1Ctrl|clk_pmod_derived_clock     1.0 MHz       1000.000      derived (from PmodAD1_top|clk)     Autoconstr_clkgroup_0     42   
+PmodAD1_top|clk                        1.0 MHz       1000.000      inferred                           Autoconstr_clkgroup_0     1    
+=====================================================================================================================================
 
-@W: MT529 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|Found inferred clock TopCounter|clk which controls 34 sequential elements including tens[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":37:4:37:12|Found inferred clock PmodAD1_top|clk which controls 1 sequential elements including ctrl.clk_pmod. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[11] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[10] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[9] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[8] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[7] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[6] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[5] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[4] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[3] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[2] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[1] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance shift_reg_1[0] (in view: work.PmodAD1Ctrl(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 None
 None
 
@@ -138,12 +152,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Aug 14 09:39:42 2026
+# Fri Aug 28 16:55:25 2026
 
 ###########################################################]
 Map & Optimize Report
 
-# Fri Aug 14 09:39:42 2026
+# Fri Aug 28 16:55:25 2026
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -169,21 +183,12 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
+@N: BN362 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Removing sequential instance ctrl.shift_reg_1[11:0] (in view: work.PmodAD1_top(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 @N: MT206 |Auto Constrain mode is enabled
-@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_2.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_1.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_2.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|Found ROM .delname. (in view: work.SevenSegDriver(verilog)) with 10 words by 7 bits.
-@W: FA239 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|ROM digit_1.svseg_1[6:0] (in view: work.SevenSegDriver(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\numtosevenseg.sv":39:8:39:11|Found ROM .delname. (in view: work.SevenSegDriver(verilog)) with 10 words by 7 bits.
-@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|User-specified initial value defined for instance tens[3:0] is being ignored. 
-@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":28:4:28:12|User-specified initial value defined for instance clk_count[24:0] is being ignored. 
-@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":38:4:38:12|User-specified initial value defined for instance ones[3:0] is being ignored. 
-@W: FX1039 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":28:4:28:12|User-specified initial value defined for instance enable_1hz is being ignored. 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -200,10 +205,10 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
@@ -216,20 +221,26 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -2.18ns		  74 /        34
-   2		0h:00m:00s		    -2.18ns		  74 /        34
+   1		0h:00m:00s		    -1.56ns		  31 /        31
+   2		0h:00m:00s		    -1.56ns		  31 /        31
+@N: FX271 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Replicating instance ctrl.bit_count[0] (in view: work.PmodAD1_top(verilog)) with 10 loads 1 time to improve timing.
+@N: FX271 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Replicating instance ctrl.bit_count[1] (in view: work.PmodAD1_top(verilog)) with 12 loads 2 times to improve timing.
+@N: FX271 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1ctrl.sv":49:4:49:12|Replicating instance ctrl.bit_count[2] (in view: work.PmodAD1_top(verilog)) with 8 loads 1 time to improve timing.
+Timing driven replication report
+Added 4 Registers via timing driven replication
+Added 4 LUTs via timing driven replication
 
-   3		0h:00m:00s		    -2.18ns		  74 /        34
 
 
-   4		0h:00m:00s		    -2.18ns		  74 /        34
-@N: FX1016 :"c:\users\grant\projects\fpga\oscilloscope\sevensegment\topcounter.sv":18:17:18:19|SB_GB_IO inserted on the port clk.
+@N: FX1016 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1_top.sv":20:27:20:29|SB_GB_IO inserted on the port clk.
+@N: FX1016 :"c:\users\grant\projects\fpga\oscilloscope\designfiles\pmodad1_top.sv":21:27:21:31|SB_GB_IO inserted on the port rst_p.
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
+@N: MT611 :|Automatically generated clock PmodAD1Ctrl|clk_pmod_derived_clock is not used and is being removed
 
 
 @S |Clock Optimization Summary
@@ -237,15 +248,15 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 34 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 35 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+34 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=========================== Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
----------------------------------------------------------------------------------------
-@K:CKID0001       clk_ibuf_gb_io      SB_GB_IO               34         clk_count[0]   
-=======================================================================================
+=============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance       
+----------------------------------------------------------------------------------------------
+@K:CKID0001       clk_ibuf_gb_io      SB_GB_IO               35         ctrl.bit_count_fast[2]
+==============================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
@@ -263,21 +274,21 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Grant\Projects\FPGA\Oscilloscope\Oscilloscope\Oscilloscope_Implmnt\Oscilloscope.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
-@W: MT420 |Found inferred clock TopCounter|clk with period 6.62ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock PmodAD1_top|clk with period 5.12ns. Please declare a user-defined clock on object "p:clk"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Aug 14 09:39:42 2026
+# Timing Report written on Fri Aug 28 16:55:25 2026
 #
 
 
-Top view:               TopCounter
-Requested Frequency:    151.0 MHz
+Top view:               PmodAD1_top
+Requested Frequency:    195.4 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -291,13 +302,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.169
+Worst slack in design: -0.903
 
-                   Requested     Estimated     Requested     Estimated                Clock        Clock                
-Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
-------------------------------------------------------------------------------------------------------------------------
-TopCounter|clk     151.0 MHz     128.4 MHz     6.622         7.790         -1.169     inferred     Autoconstr_clkgroup_0
-========================================================================================================================
+                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+PmodAD1_top|clk     195.4 MHz     166.1 MHz     5.117         6.020         -0.903     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
 
 
 
@@ -306,12 +317,12 @@ TopCounter|clk     151.0 MHz     128.4 MHz     6.622         7.790         -1.16
 Clock Relationships
 *******************
 
-Clocks                          |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
------------------------------------------------------------------------------------------------------------------------
-Starting        Ending          |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
------------------------------------------------------------------------------------------------------------------------
-TopCounter|clk  TopCounter|clk  |  6.622       -1.169  |  No paths    -      |  No paths    -      |  No paths    -    
-=======================================================================================================================
+Clocks                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------
+PmodAD1_top|clk  PmodAD1_top|clk  |  5.117       -0.903  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -325,7 +336,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: TopCounter|clk
+Detailed Report for Clock: PmodAD1_top|clk
 ====================================
 
 
@@ -333,41 +344,41 @@ Detailed Report for Clock: TopCounter|clk
 Starting Points with Worst Slack
 ********************************
 
-                 Starting                                               Arrival           
-Instance         Reference          Type       Pin     Net              Time        Slack 
-                 Clock                                                                    
-------------------------------------------------------------------------------------------
-enable_1hz       TopCounter|clk     SB_DFF     Q       enable_1hz       0.540       -1.169
-ones[3]          TopCounter|clk     SB_DFF     Q       ones[3]          0.540       -1.119
-ones[1]          TopCounter|clk     SB_DFF     Q       ones[1]          0.540       -1.014
-ones[2]          TopCounter|clk     SB_DFF     Q       ones[2]          0.540       -0.965
-tens[0]          TopCounter|clk     SB_DFF     Q       tens[0]          0.540       -0.951
-tens[1]          TopCounter|clk     SB_DFF     Q       tens[1]          0.540       -0.944
-tens[2]          TopCounter|clk     SB_DFF     Q       tens[2]          0.540       -0.881
-tens[3]          TopCounter|clk     SB_DFF     Q       tens[3]          0.540       -0.818
-clk_count[1]     TopCounter|clk     SB_DFF     Q       clk_count[1]     0.540       -0.408
-clk_count[0]     TopCounter|clk     SB_DFF     Q       clk_count[0]     0.540       -0.346
-==========================================================================================
+                           Starting                                                       Arrival           
+Instance                   Reference           Type         Pin     Net                   Time        Slack 
+                           Clock                                                                            
+------------------------------------------------------------------------------------------------------------
+ctrl.bit_count_er[3]       PmodAD1_top|clk     SB_DFFER     Q       bit_count[3]          0.540       -0.903
+ctrl.clk_pmod              PmodAD1_top|clk     SB_DFFR      Q       clk_pmod_i            0.540       -0.903
+ctrl.bit_count[0]          PmodAD1_top|clk     SB_DFFR      Q       bit_count[0]          0.540       -0.854
+ctrl.bit_count[2]          PmodAD1_top|clk     SB_DFFR      Q       bit_count[2]          0.540       -0.854
+ctrl.bit_count_fast[0]     PmodAD1_top|clk     SB_DFFR      Q       bit_count_fast[0]     0.540       -0.854
+ctrl.shift_reg_0[0]        PmodAD1_top|clk     SB_DFFER     Q       shift_reg_0[0]        0.540       -0.854
+ctrl.shift_reg_0[1]        PmodAD1_top|clk     SB_DFFER     Q       shift_reg_0[1]        0.540       -0.854
+ctrl.shift_reg_0[2]        PmodAD1_top|clk     SB_DFFER     Q       shift_reg_0[2]        0.540       -0.854
+ctrl.bit_count[4]          PmodAD1_top|clk     SB_DFFR      Q       un2lto4               0.540       -0.833
+ctrl.bit_count_fast[1]     PmodAD1_top|clk     SB_DFFR      Q       bit_count_fast[1]     0.540       -0.833
+============================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                  Starting                                                  Required           
-Instance          Reference          Type       Pin     Net                 Time         Slack 
-                  Clock                                                                        
------------------------------------------------------------------------------------------------
-tens[0]           TopCounter|clk     SB_DFF     D       tens_5[0]           6.517        -1.169
-tens[2]           TopCounter|clk     SB_DFF     D       tens_RNO[2]         6.517        -1.148
-tens[3]           TopCounter|clk     SB_DFF     D       tens_5[3]           6.517        -1.119
-tens[1]           TopCounter|clk     SB_DFF     D       tens_RNO[1]         6.517        -1.085
-clk_count[24]     TopCounter|clk     SB_DFF     D       clk_count_3[24]     6.517        -0.408
-clk_count[6]      TopCounter|clk     SB_DFF     D       clk_count_3[6]      6.517        -0.346
-clk_count[11]     TopCounter|clk     SB_DFF     D       clk_count_3[11]     6.517        -0.346
-clk_count[12]     TopCounter|clk     SB_DFF     D       clk_count_3[12]     6.517        -0.346
-clk_count[13]     TopCounter|clk     SB_DFF     D       clk_count_3[13]     6.517        -0.346
-clk_count[14]     TopCounter|clk     SB_DFF     D       clk_count_3[14]     6.517        -0.346
-===============================================================================================
+                        Starting                                                              Required           
+Instance                Reference           Type         Pin     Net                          Time         Slack 
+                        Clock                                                                                    
+-----------------------------------------------------------------------------------------------------------------
+ctrl.bit_count[4]       PmodAD1_top|clk     SB_DFFR      D       bit_count_3                  5.011        -0.903
+ctrl.data_ch0[0]        PmodAD1_top|clk     SB_DFFR      D       data_ch0                     5.011        -0.903
+ctrl.data_ch0[1]        PmodAD1_top|clk     SB_DFFR      D       data_ch0_0                   5.011        -0.903
+ctrl.data_ch0[2]        PmodAD1_top|clk     SB_DFFR      D       data_ch0_1                   5.011        -0.903
+ctrl.shift_reg_0[0]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+ctrl.shift_reg_0[1]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+ctrl.shift_reg_0[2]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+ctrl.shift_reg_0[3]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+ctrl.shift_reg_0[4]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+ctrl.shift_reg_0[5]     PmodAD1_top|clk     SB_DFFER     E       bit_count_er_RNIDNGP1[3]     5.117        -0.798
+=================================================================================================================
 
 
 
@@ -376,182 +387,167 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      6.622
+      Requested Period:                      5.117
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         6.517
+    = Required time:                         5.011
 
-    - Propagation time:                      7.685
+    - Propagation time:                      5.915
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.169
+    = Slack (critical) :                     -0.903
 
-    Number of logic level(s):                3
-    Starting point:                          enable_1hz / Q
-    Ending point:                            tens[0] / D
-    The start point is clocked by            TopCounter|clk [rising] on pin C
-    The end   point is clocked by            TopCounter|clk [rising] on pin C
+    Number of logic level(s):                2
+    Starting point:                          ctrl.bit_count_er[3] / Q
+    Ending point:                            ctrl.bit_count[4] / D
+    The start point is clocked by            PmodAD1_top|clk [rising] on pin C
+    The end   point is clocked by            PmodAD1_top|clk [rising] on pin C
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-enable_1hz                                           SB_DFF      Q        Out     0.540     0.540       -         
-enable_1hz                                           Net         -        -       1.599     -           5         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     I0       In      -         2.139       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     O        Out     0.449     2.588       -         
-tens_0_sqmuxa_1_s_0                                  Net         -        -       1.371     -           2         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     I0       In      -         3.959       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     O        Out     0.449     4.408       -         
-tens_0_sqmuxa_1                                      Net         -        -       1.371     -           4         
-tens_RNO[0]                                          SB_LUT4     I1       In      -         5.779       -         
-tens_RNO[0]                                          SB_LUT4     O        Out     0.400     6.178       -         
-tens_5[0]                                            Net         -        -       1.507     -           1         
-tens[0]                                              SB_DFF      D        In      -         7.685       -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 7.790 is 1.942(24.9%) logic and 5.848(75.1%) route.
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+ctrl.bit_count_er[3]        SB_DFFER     Q        Out     0.540     0.540       -         
+bit_count[3]                Net          -        -       1.599     -           8         
+ctrl.bit_count_RNO_0[4]     SB_LUT4      I0       In      -         2.139       -         
+ctrl.bit_count_RNO_0[4]     SB_LUT4      O        Out     0.449     2.588       -         
+bit_count_e_1[4]            Net          -        -       1.371     -           1         
+ctrl.bit_count_RNO[4]       SB_LUT4      I0       In      -         3.959       -         
+ctrl.bit_count_RNO[4]       SB_LUT4      O        Out     0.449     4.408       -         
+bit_count_3                 Net          -        -       1.507     -           1         
+ctrl.bit_count[4]           SB_DFFR      D        In      -         5.915       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 6.020 is 1.543(25.6%) logic and 4.477(74.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      6.622
+      Requested Period:                      5.117
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         6.517
+    = Required time:                         5.011
 
-    - Propagation time:                      7.664
+    - Propagation time:                      5.915
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.148
+    = Slack (critical) :                     -0.903
 
-    Number of logic level(s):                3
-    Starting point:                          enable_1hz / Q
-    Ending point:                            tens[2] / D
-    The start point is clocked by            TopCounter|clk [rising] on pin C
-    The end   point is clocked by            TopCounter|clk [rising] on pin C
+    Number of logic level(s):                2
+    Starting point:                          ctrl.clk_pmod / Q
+    Ending point:                            ctrl.data_ch0[0] / D
+    The start point is clocked by            PmodAD1_top|clk [rising] on pin C
+    The end   point is clocked by            PmodAD1_top|clk [rising] on pin C
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-enable_1hz                                           SB_DFF      Q        Out     0.540     0.540       -         
-enable_1hz                                           Net         -        -       1.599     -           5         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     I0       In      -         2.139       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     O        Out     0.449     2.588       -         
-tens_0_sqmuxa_1_s_0                                  Net         -        -       1.371     -           2         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     I0       In      -         3.959       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     O        Out     0.449     4.408       -         
-tens_0_sqmuxa_1                                      Net         -        -       1.371     -           4         
-tens_RNO[2]                                          SB_LUT4     I2       In      -         5.779       -         
-tens_RNO[2]                                          SB_LUT4     O        Out     0.379     6.157       -         
-tens_RNO[2]                                          Net         -        -       1.507     -           1         
-tens[2]                                              SB_DFF      D        In      -         7.664       -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 7.769 is 1.922(24.7%) logic and 5.848(75.3%) route.
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+ctrl.clk_pmod              SB_DFFR     Q        Out     0.540     0.540       -         
+clk_pmod_i                 Net         -        -       1.599     -           24        
+ctrl.data_ch0_RNO_0[0]     SB_LUT4     I0       In      -         2.139       -         
+ctrl.data_ch0_RNO_0[0]     SB_LUT4     O        Out     0.449     2.588       -         
+N_13_mux_1                 Net         -        -       1.371     -           1         
+ctrl.data_ch0_RNO[0]       SB_LUT4     I0       In      -         3.959       -         
+ctrl.data_ch0_RNO[0]       SB_LUT4     O        Out     0.449     4.408       -         
+data_ch0                   Net         -        -       1.507     -           1         
+ctrl.data_ch0[0]           SB_DFFR     D        In      -         5.915       -         
+========================================================================================
+Total path delay (propagation time + setup) of 6.020 is 1.543(25.6%) logic and 4.477(74.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      6.622
+      Requested Period:                      5.117
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         6.517
+    = Required time:                         5.011
 
-    - Propagation time:                      7.636
+    - Propagation time:                      5.915
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.119
+    = Slack (critical) :                     -0.903
 
-    Number of logic level(s):                3
-    Starting point:                          ones[3] / Q
-    Ending point:                            tens[0] / D
-    The start point is clocked by            TopCounter|clk [rising] on pin C
-    The end   point is clocked by            TopCounter|clk [rising] on pin C
+    Number of logic level(s):                2
+    Starting point:                          ctrl.clk_pmod / Q
+    Ending point:                            ctrl.data_ch0[1] / D
+    The start point is clocked by            PmodAD1_top|clk [rising] on pin C
+    The end   point is clocked by            PmodAD1_top|clk [rising] on pin C
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-ones[3]                                              SB_DFF      Q        Out     0.540     0.540       -         
-ones[3]                                              Net         -        -       1.599     -           10        
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     I1       In      -         2.139       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     O        Out     0.400     2.539       -         
-tens_0_sqmuxa_1_s_0                                  Net         -        -       1.371     -           2         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     I0       In      -         3.910       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     O        Out     0.449     4.359       -         
-tens_0_sqmuxa_1                                      Net         -        -       1.371     -           4         
-tens_RNO[0]                                          SB_LUT4     I1       In      -         5.729       -         
-tens_RNO[0]                                          SB_LUT4     O        Out     0.400     6.129       -         
-tens_5[0]                                            Net         -        -       1.507     -           1         
-tens[0]                                              SB_DFF      D        In      -         7.636       -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 7.741 is 1.893(24.5%) logic and 5.848(75.5%) route.
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+ctrl.clk_pmod              SB_DFFR     Q        Out     0.540     0.540       -         
+clk_pmod_i                 Net         -        -       1.599     -           24        
+ctrl.data_ch0_RNO_0[1]     SB_LUT4     I0       In      -         2.139       -         
+ctrl.data_ch0_RNO_0[1]     SB_LUT4     O        Out     0.449     2.588       -         
+N_13_mux_0                 Net         -        -       1.371     -           1         
+ctrl.data_ch0_RNO[1]       SB_LUT4     I0       In      -         3.959       -         
+ctrl.data_ch0_RNO[1]       SB_LUT4     O        Out     0.449     4.408       -         
+data_ch0_0                 Net         -        -       1.507     -           1         
+ctrl.data_ch0[1]           SB_DFFR     D        In      -         5.915       -         
+========================================================================================
+Total path delay (propagation time + setup) of 6.020 is 1.543(25.6%) logic and 4.477(74.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      6.622
+      Requested Period:                      5.117
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         6.517
+    = Required time:                         5.011
 
-    - Propagation time:                      7.636
+    - Propagation time:                      5.915
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.119
+    = Slack (critical) :                     -0.903
 
-    Number of logic level(s):                3
-    Starting point:                          enable_1hz / Q
-    Ending point:                            tens[3] / D
-    The start point is clocked by            TopCounter|clk [rising] on pin C
-    The end   point is clocked by            TopCounter|clk [rising] on pin C
+    Number of logic level(s):                2
+    Starting point:                          ctrl.clk_pmod / Q
+    Ending point:                            ctrl.data_ch0[2] / D
+    The start point is clocked by            PmodAD1_top|clk [rising] on pin C
+    The end   point is clocked by            PmodAD1_top|clk [rising] on pin C
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-enable_1hz                                           SB_DFF      Q        Out     0.540     0.540       -         
-enable_1hz                                           Net         -        -       1.599     -           5         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     I0       In      -         2.139       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     O        Out     0.449     2.588       -         
-tens_0_sqmuxa_1_s_0                                  Net         -        -       1.371     -           2         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     I0       In      -         3.959       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     O        Out     0.449     4.408       -         
-tens_0_sqmuxa_1                                      Net         -        -       1.371     -           4         
-tens_RNO[3]                                          SB_LUT4     I2       In      -         5.779       -         
-tens_RNO[3]                                          SB_LUT4     O        Out     0.351     6.129       -         
-tens_5[3]                                            Net         -        -       1.507     -           1         
-tens[3]                                              SB_DFF      D        In      -         7.636       -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 7.741 is 1.893(24.5%) logic and 5.848(75.5%) route.
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+ctrl.clk_pmod              SB_DFFR     Q        Out     0.540     0.540       -         
+clk_pmod_i                 Net         -        -       1.599     -           24        
+ctrl.data_ch0_RNO_0[2]     SB_LUT4     I0       In      -         2.139       -         
+ctrl.data_ch0_RNO_0[2]     SB_LUT4     O        Out     0.449     2.588       -         
+N_13_mux                   Net         -        -       1.371     -           1         
+ctrl.data_ch0_RNO[2]       SB_LUT4     I0       In      -         3.959       -         
+ctrl.data_ch0_RNO[2]       SB_LUT4     O        Out     0.449     4.408       -         
+data_ch0_1                 Net         -        -       1.507     -           1         
+ctrl.data_ch0[2]           SB_DFFR     D        In      -         5.915       -         
+========================================================================================
+Total path delay (propagation time + setup) of 6.020 is 1.543(25.6%) logic and 4.477(74.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      6.622
+      Requested Period:                      5.117
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         6.517
+    = Required time:                         5.011
 
-    - Propagation time:                      7.615
+    - Propagation time:                      5.865
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.098
+    = Slack (non-critical) :                 -0.854
 
-    Number of logic level(s):                3
-    Starting point:                          ones[3] / Q
-    Ending point:                            tens[2] / D
-    The start point is clocked by            TopCounter|clk [rising] on pin C
-    The end   point is clocked by            TopCounter|clk [rising] on pin C
+    Number of logic level(s):                2
+    Starting point:                          ctrl.bit_count[0] / Q
+    Ending point:                            ctrl.data_ch0[0] / D
+    The start point is clocked by            PmodAD1_top|clk [rising] on pin C
+    The end   point is clocked by            PmodAD1_top|clk [rising] on pin C
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-ones[3]                                              SB_DFF      Q        Out     0.540     0.540       -         
-ones[3]                                              Net         -        -       1.599     -           10        
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     I1       In      -         2.139       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1_s_0     SB_LUT4     O        Out     0.400     2.539       -         
-tens_0_sqmuxa_1_s_0                                  Net         -        -       1.371     -           2         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     I0       In      -         3.910       -         
-display.digit_2.svseg_1_6_0_.tens_0_sqmuxa_1         SB_LUT4     O        Out     0.449     4.359       -         
-tens_0_sqmuxa_1                                      Net         -        -       1.371     -           4         
-tens_RNO[2]                                          SB_LUT4     I2       In      -         5.729       -         
-tens_RNO[2]                                          SB_LUT4     O        Out     0.379     6.108       -         
-tens_RNO[2]                                          Net         -        -       1.507     -           1         
-tens[2]                                              SB_DFF      D        In      -         7.615       -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 7.720 is 1.872(24.3%) logic and 5.848(75.7%) route.
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+ctrl.bit_count[0]          SB_DFFR     Q        Out     0.540     0.540       -         
+bit_count[0]               Net         -        -       1.599     -           9         
+ctrl.data_ch0_RNO_1[0]     SB_LUT4     I0       In      -         2.139       -         
+ctrl.data_ch0_RNO_1[0]     SB_LUT4     O        Out     0.449     2.588       -         
+N_15_1                     Net         -        -       1.371     -           1         
+ctrl.data_ch0_RNO[0]       SB_LUT4     I1       In      -         3.959       -         
+ctrl.data_ch0_RNO[0]       SB_LUT4     O        Out     0.400     4.359       -         
+data_ch0                   Net         -        -       1.507     -           1         
+ctrl.data_ch0[0]           SB_DFFR     D        In      -         5.865       -         
+========================================================================================
+Total path delay (propagation time + setup) of 5.971 is 1.494(25.0%) logic and 4.477(75.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -561,43 +557,44 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 ---------------------------------------
-Resource Usage Report for TopCounter 
+Resource Usage Report for PmodAD1_top 
 
 Mapping to part: ice40hx1kvq100
 Cell usage:
-GND             3 uses
-SB_CARRY        30 uses
-SB_DFF          34 uses
-VCC             3 uses
-SB_LUT4         62 uses
+GND             1 use
+SB_DFFER        22 uses
+SB_DFFES        1 use
+SB_DFFR         12 uses
+VCC             1 use
+SB_LUT4         40 uses
 
-I/O ports: 15
-I/O primitives: 15
-SB_GB_IO       1 use
-SB_IO          14 uses
+I/O ports: 7
+I/O primitives: 6
+SB_GB_IO       2 uses
+SB_IO          4 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   34 (2%)
+Register bits not including I/Os:   35 (2%)
 Total load per clock:
-   TopCounter|clk: 1
+   PmodAD1_top|clk: 1
 
 @S |Mapping Summary:
-Total  LUTs: 62 (4%)
+Total  LUTs: 40 (3%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 62 = 62 
+Distribution of All Consumed Luts 40 = 40 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 28MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 28MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Aug 14 09:39:42 2026
+# Fri Aug 28 16:55:26 2026
 
 ###########################################################]

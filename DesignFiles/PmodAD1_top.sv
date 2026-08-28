@@ -10,8 +10,7 @@
     seven segment display. Uses the Double Dabble algorithm to convert the 12-bit binary
     output from the ADC into a decimal for display on a seven segment.
 
-    Dependencies: SevenSegDriver.sv
-                  PmodAD1Ctrl.sv
+    Dependencies: PmodAD1Ctrl.sv
     
     Revision History: 1.0  - Initial Design
                       1.01 - Updated Output conditions - led
@@ -31,7 +30,7 @@
     logic [11:0] data_ch1;
     logic        valid;
 
-    module PmodAD1Ctrl ctrl (
+    PmodAD1Ctrl ctrl (
         .clk_fpga(clk),
         .miso_0(miso_0),
         .miso_1(miso_1),
@@ -45,7 +44,7 @@
     );
     
     //Turn on led 1 if input is greater than 1/4 of the supply voltage
-    always_comb @(*) begin
+    always_comb begin
         led1 = (data_ch0 > 1024) ? 1'b1 : 1'b0;
     end
 

@@ -1,0 +1,54 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40HX1KVQ100 (Lattice)
+
+---------------------------------------------------------------------------
+########   Utilization report for  Top level view:   PmodAD1_top   ########
+===========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     35                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PmodAD1_top:	35 (41.18 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     40                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block PmodAD1_top:	40 (47.06 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     6                  100 %                
+=================================================
+Total IO PADS in the block PmodAD1_top:	6 (7.06 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   PmodAD1Ctrl   ########
+Instance path:   PmodAD1_top.PmodAD1Ctrl                         
+=================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     35                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PmodAD1_top.PmodAD1Ctrl:	35 (41.18 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     36                 90 %                 
+=================================================
+Total COMBINATIONAL LOGIC in the block PmodAD1_top.PmodAD1Ctrl:	36 (42.35 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

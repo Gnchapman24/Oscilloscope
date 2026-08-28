@@ -1,0 +1,84 @@
+ble_pack ctrl.shift_reg_0_4_LC_7_5_0 { ctrl.shift_reg_0_4_THRU_LUT4_0, ctrl.shift_reg_0[4] }
+ble_pack ctrl.shift_reg_0_1_LC_7_5_1 { ctrl.shift_reg_0_1_THRU_LUT4_0, ctrl.shift_reg_0[1] }
+ble_pack ctrl.shift_reg_0_2_LC_7_5_2 { ctrl.shift_reg_0_2_THRU_LUT4_0, ctrl.shift_reg_0[2] }
+ble_pack ctrl.shift_reg_0_3_LC_7_5_3 { ctrl.shift_reg_0_3_THRU_LUT4_0, ctrl.shift_reg_0[3] }
+ble_pack ctrl.shift_reg_0_11_LC_7_5_4 { ctrl.shift_reg_0_11_THRU_LUT4_0, ctrl.shift_reg_0[11] }
+ble_pack ctrl.shift_reg_0_5_LC_7_5_5 { ctrl.shift_reg_0_5_THRU_LUT4_0, ctrl.shift_reg_0[5] }
+ble_pack ctrl.shift_reg_0_6_LC_7_5_6 { ctrl.shift_reg_0_6_THRU_LUT4_0, ctrl.shift_reg_0[6] }
+ble_pack ctrl.shift_reg_0_7_LC_7_5_7 { ctrl.shift_reg_0_7_THRU_LUT4_0, ctrl.shift_reg_0[7] }
+clb_pack LT_7_5 { ctrl.shift_reg_0_4_LC_7_5_0, ctrl.shift_reg_0_1_LC_7_5_1, ctrl.shift_reg_0_2_LC_7_5_2, ctrl.shift_reg_0_3_LC_7_5_3, ctrl.shift_reg_0_11_LC_7_5_4, ctrl.shift_reg_0_5_LC_7_5_5, ctrl.shift_reg_0_6_LC_7_5_6, ctrl.shift_reg_0_7_LC_7_5_7 }
+set_location LT_7_5 7 5
+ble_pack ctrl.data_ch0_RNO_0_1_LC_7_6_0 { ctrl.data_ch0_RNO_0[1] }
+ble_pack ctrl.clk_pmod_LC_7_6_1 { ctrl.clk_pmod_RNIC23D_ctrl.clk_pmod_REP_LUT4_0, ctrl.clk_pmod }
+ble_pack ctrl.data_ch0_RNO_0_2_LC_7_6_2 { ctrl.data_ch0_RNO_0[2] }
+ble_pack ctrl.data_ch0_2_LC_7_6_3 { ctrl.data_ch0_RNO[2], ctrl.data_ch0[2] }
+ble_pack ctrl.clk_pmod_RNIC23D_LC_7_6_4 { ctrl.clk_pmod_RNIC23D }
+ble_pack ctrl.bit_count_1_LC_7_6_5 { ctrl.bit_count_RNO[1], ctrl.bit_count[1] }
+ble_pack ctrl.bit_count_fast_2_LC_7_6_6 { ctrl.bit_count_fast_RNO[2], ctrl.bit_count_fast[2] }
+clb_pack LT_7_6 { ctrl.data_ch0_RNO_0_1_LC_7_6_0, ctrl.clk_pmod_LC_7_6_1, ctrl.data_ch0_RNO_0_2_LC_7_6_2, ctrl.data_ch0_2_LC_7_6_3, ctrl.clk_pmod_RNIC23D_LC_7_6_4, ctrl.bit_count_1_LC_7_6_5, ctrl.bit_count_fast_2_LC_7_6_6 }
+set_location LT_7_6 7 6
+ble_pack led1_obuf_RNO_2_LC_7_7_0 { led1_obuf_RNO_2 }
+ble_pack led1_obuf_RNO_1_LC_7_7_1 { led1_obuf_RNO_1 }
+ble_pack led1_obuf_RNO_0_LC_7_7_2 { led1_obuf_RNO_0 }
+ble_pack led1_obuf_RNO_LC_7_7_3 { led1_obuf_RNO }
+ble_pack ctrl.data_ch0_10_LC_7_7_4 { ctrl.data_ch0_RNO[10], ctrl.data_ch0[10] }
+ble_pack ctrl.data_ch0_11_LC_7_7_5 { ctrl.data_ch0_RNO[11], ctrl.data_ch0[11] }
+ble_pack ctrl.data_ch0_6_LC_7_7_6 { ctrl.data_ch0_RNO[6], ctrl.data_ch0[6] }
+ble_pack ctrl.data_ch0_7_LC_7_7_7 { ctrl.data_ch0_RNO[7], ctrl.data_ch0[7] }
+clb_pack LT_7_7 { led1_obuf_RNO_2_LC_7_7_0, led1_obuf_RNO_1_LC_7_7_1, led1_obuf_RNO_0_LC_7_7_2, led1_obuf_RNO_LC_7_7_3, ctrl.data_ch0_10_LC_7_7_4, ctrl.data_ch0_11_LC_7_7_5, ctrl.data_ch0_6_LC_7_7_6, ctrl.data_ch0_7_LC_7_7_7 }
+set_location LT_7_7 7 7
+ble_pack ctrl.data_ch0_3_LC_7_8_0 { ctrl.data_ch0_RNO[3], ctrl.data_ch0[3] }
+ble_pack ctrl.data_ch0_4_LC_7_8_1 { ctrl.data_ch0_RNO[4], ctrl.data_ch0[4] }
+ble_pack ctrl.data_ch0_5_LC_7_8_2 { ctrl.data_ch0_RNO[5], ctrl.data_ch0[5] }
+ble_pack ctrl.data_ch0_8_LC_7_8_3 { ctrl.data_ch0_RNO[8], ctrl.data_ch0[8] }
+ble_pack ctrl.data_ch0_9_LC_7_8_4 { ctrl.data_ch0_RNO[9], ctrl.data_ch0[9] }
+clb_pack LT_7_8 { ctrl.data_ch0_3_LC_7_8_0, ctrl.data_ch0_4_LC_7_8_1, ctrl.data_ch0_5_LC_7_8_2, ctrl.data_ch0_8_LC_7_8_3, ctrl.data_ch0_9_LC_7_8_4 }
+set_location LT_7_8 7 8
+ble_pack ctrl.bit_count_fast_1_LC_8_5_0 { ctrl.bit_count_fast_RNO[1], ctrl.bit_count_fast[1] }
+clb_pack LT_8_5 { ctrl.bit_count_fast_1_LC_8_5_0 }
+set_location LT_8_5 8 5
+ble_pack ctrl.bit_count_RNO_0_4_LC_8_6_0 { ctrl.bit_count_RNO_0[4] }
+ble_pack ctrl.bit_count_4_LC_8_6_1 { ctrl.bit_count_RNO[4], ctrl.bit_count[4] }
+ble_pack ctrl.cs_n_RNO_1_LC_8_6_2 { ctrl.cs_n_RNO_1 }
+ble_pack ctrl.cs_n_RNO_0_LC_8_6_3 { ctrl.cs_n_RNO_0 }
+ble_pack ctrl.bit_count_fast_RNI04N21_1_LC_8_6_5 { ctrl.bit_count_fast_RNI04N21[1] }
+ble_pack ctrl.bit_count_er_RNIDNGP1_3_LC_8_6_6 { ctrl.bit_count_er_RNIDNGP1[3] }
+ble_pack ctrl.bit_count_fast_0_LC_8_6_7 { ctrl.bit_count_fast_RNO[0], ctrl.bit_count_fast[0] }
+clb_pack LT_8_6 { ctrl.bit_count_RNO_0_4_LC_8_6_0, ctrl.bit_count_4_LC_8_6_1, ctrl.cs_n_RNO_1_LC_8_6_2, ctrl.cs_n_RNO_0_LC_8_6_3, ctrl.bit_count_fast_RNI04N21_1_LC_8_6_5, ctrl.bit_count_er_RNIDNGP1_3_LC_8_6_6, ctrl.bit_count_fast_0_LC_8_6_7 }
+set_location LT_8_6 8 6
+ble_pack ctrl.bit_count_RNI4DAM_2_LC_8_7_0 { ctrl.bit_count_RNI4DAM[2] }
+ble_pack ctrl.bit_count_2_LC_8_7_1 { ctrl.bit_count_RNO[2], ctrl.bit_count[2] }
+ble_pack ctrl.data_ch0_RNO_0_0_LC_8_7_2 { ctrl.data_ch0_RNO_0[0] }
+ble_pack ctrl.data_ch0_0_LC_8_7_3 { ctrl.data_ch0_RNO[0], ctrl.data_ch0[0] }
+ble_pack ctrl.data_ch0_RNO_1_0_LC_8_7_4 { ctrl.data_ch0_RNO_1[0] }
+ble_pack ctrl.data_ch0_RNO_1_2_LC_8_7_5 { ctrl.data_ch0_RNO_1[2] }
+ble_pack ctrl.data_ch0_RNO_1_1_LC_8_7_6 { ctrl.data_ch0_RNO_1[1] }
+ble_pack ctrl.data_ch0_1_LC_8_7_7 { ctrl.data_ch0_RNO[1], ctrl.data_ch0[1] }
+clb_pack LT_8_7 { ctrl.bit_count_RNI4DAM_2_LC_8_7_0, ctrl.bit_count_2_LC_8_7_1, ctrl.data_ch0_RNO_0_0_LC_8_7_2, ctrl.data_ch0_0_LC_8_7_3, ctrl.data_ch0_RNO_1_0_LC_8_7_4, ctrl.data_ch0_RNO_1_2_LC_8_7_5, ctrl.data_ch0_RNO_1_1_LC_8_7_6, ctrl.data_ch0_1_LC_8_7_7 }
+set_location LT_8_7 8 7
+ble_pack ctrl.bit_count_0_LC_8_8_0 { ctrl.bit_count_RNO[0], ctrl.bit_count[0] }
+ble_pack ctrl.bit_count_1_rep1_LC_8_8_6 { ctrl.bit_count_1_rep1_RNO, ctrl.bit_count_1_rep1 }
+clb_pack LT_8_8 { ctrl.bit_count_0_LC_8_8_0, ctrl.bit_count_1_rep1_LC_8_8_6 }
+set_location LT_8_8 8 8
+ble_pack ctrl.cs_n_LC_9_5_0 { ctrl.cs_n_RNO, ctrl.cs_n }
+clb_pack LT_9_5 { ctrl.cs_n_LC_9_5_0 }
+set_location LT_9_5 9 5
+ble_pack ctrl.bit_count_er_3_LC_9_6_0 { ctrl.bit_count_er_RNO[3], ctrl.bit_count_er[3] }
+clb_pack LT_9_6 { ctrl.bit_count_er_3_LC_9_6_0 }
+set_location LT_9_6 9 6
+ble_pack ctrl.shift_reg_0_10_LC_9_7_0 { ctrl.shift_reg_0_10_THRU_LUT4_0, ctrl.shift_reg_0[10] }
+ble_pack ctrl.shift_reg_0_0_LC_9_7_1 { ctrl.shift_reg_0_0_THRU_LUT4_0, ctrl.shift_reg_0[0] }
+ble_pack ctrl.shift_reg_0_9_LC_9_7_2 { ctrl.shift_reg_0_9_THRU_LUT4_0, ctrl.shift_reg_0[9] }
+ble_pack ctrl.shift_reg_0_8_LC_9_7_3 { ctrl.shift_reg_0_8_THRU_LUT4_0, ctrl.shift_reg_0[8] }
+clb_pack LT_9_7 { ctrl.shift_reg_0_10_LC_9_7_0, ctrl.shift_reg_0_0_LC_9_7_1, ctrl.shift_reg_0_9_LC_9_7_2, ctrl.shift_reg_0_8_LC_9_7_3 }
+set_location LT_9_7 9 7
+ble_pack ctrl.cs_n_RNIIG3F_LC_9_10_1 { ctrl.cs_n_RNIIG3F }
+clb_pack LT_9_10 { ctrl.cs_n_RNIIG3F_LC_9_10_1 }
+set_location LT_9_10 9 10
+set_location rst_p_ibuf_gb_io_gb 0 8
+set_io sclk 65
+set_io miso_0 63
+set_io rst_p 53
+set_io led1 56
+set_io cs_n 64
+set_io clk 15
