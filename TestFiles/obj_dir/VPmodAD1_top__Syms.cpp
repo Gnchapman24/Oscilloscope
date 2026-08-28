@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "VPmodAD1Ctrl__pch.h"
-#include "VPmodAD1Ctrl.h"
-#include "VPmodAD1Ctrl___024root.h"
+#include "VPmodAD1_top__pch.h"
+#include "VPmodAD1_top.h"
+#include "VPmodAD1_top___024root.h"
 
 // FUNCTIONS
-VPmodAD1Ctrl__Syms::~VPmodAD1Ctrl__Syms()
+VPmodAD1_top__Syms::~VPmodAD1_top__Syms()
 {
 }
 
-VPmodAD1Ctrl__Syms::VPmodAD1Ctrl__Syms(VerilatedContext* contextp, const char* namep, VPmodAD1Ctrl* modelp)
+VPmodAD1_top__Syms::VPmodAD1_top__Syms(VerilatedContext* contextp, const char* namep, VPmodAD1_top* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
@@ -18,7 +18,7 @@ VPmodAD1Ctrl__Syms::VPmodAD1Ctrl__Syms(VerilatedContext* contextp, const char* n
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(28);
+        Verilated::stackCheck(35);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);

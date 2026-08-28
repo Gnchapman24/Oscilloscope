@@ -2,9 +2,9 @@
 # DESCRIPTION: Verilator output: Makefile for building Verilated archive or executable
 #
 # Execute this makefile from the object directory:
-#    make -f VPmodAD1Ctrl.mk
+#    make -f VPmodAD1_top.mk
 
-default: VPmodAD1Ctrl
+default: VPmodAD1_top
 
 ### Constants...
 # Perl executable (from $PERL, defaults to 'perl' if not set)
@@ -32,9 +32,9 @@ VM_SC_TARGET_ARCH = linux
 
 ### Vars...
 # Design prefix (from --prefix)
-VM_PREFIX = VPmodAD1Ctrl
+VM_PREFIX = VPmodAD1_top
 # Module prefix (from --prefix)
-VM_MODPREFIX = VPmodAD1Ctrl
+VM_MODPREFIX = VPmodAD1_top
 # User CFLAGS (from -CFLAGS on Verilator command line)
 VM_USER_CFLAGS = \
 
@@ -43,7 +43,7 @@ VM_USER_LDLIBS = \
 
 # User .cpp files (from .cpp's on Verilator command line)
 VM_USER_CLASSES = \
-	PmodAD1Ctrl_sim \
+	PmodAD1_Ctrl_top_sim \
 
 # User .cpp directories (from .cpp's on Verilator command line)
 VM_USER_DIR = \
@@ -52,18 +52,18 @@ VM_USER_DIR = \
 
 ### Default rules...
 # Include list of all generated classes
-include VPmodAD1Ctrl_classes.mk
+include VPmodAD1_top_classes.mk
 # Include global rules
 include $(VERILATOR_ROOT)/include/verilated.mk
 
 ### Executable rules... (from --exe)
 VPATH += $(VM_USER_DIR)
 
-PmodAD1Ctrl_sim.o: PmodAD1Ctrl_sim.cpp 
+PmodAD1_Ctrl_top_sim.o: PmodAD1_Ctrl_top_sim.cpp 
 	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST)  -c -o $@ $<
 
 ### Link rules... (from --exe)
-VPmodAD1Ctrl: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
+VPmodAD1_top: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
 	$(LINK) $(LDFLAGS) $^ $(LOADLIBES) $(LDLIBS) $(LIBS) $(SC_LIBS) -o $@
 
 

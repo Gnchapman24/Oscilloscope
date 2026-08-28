@@ -5,38 +5,37 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VPMODAD1CTRL_H_
-#define VERILATED_VPMODAD1CTRL_H_  // guard
+#ifndef VERILATED_VPMODAD1_TOP_H_
+#define VERILATED_VPMODAD1_TOP_H_  // guard
 
 #include "verilated.h"
 
-class VPmodAD1Ctrl__Syms;
-class VPmodAD1Ctrl___024root;
+class VPmodAD1_top__Syms;
+class VPmodAD1_top___024root;
+class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class alignas(VL_CACHE_LINE_BYTES) VPmodAD1Ctrl VL_NOT_FINAL : public VerilatedModel {
+class alignas(VL_CACHE_LINE_BYTES) VPmodAD1_top VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    VPmodAD1Ctrl__Syms* const vlSymsp;
+    VPmodAD1_top__Syms* const vlSymsp;
 
   public:
 
     // CONSTEXPR CAPABILITIES
     // Verilated with --trace?
-    static constexpr bool traceCapable = false;
+    static constexpr bool traceCapable = true;
 
     // PORTS
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
-    VL_IN8(&clk_fpga,0,0);
-    VL_IN8(&rst_n,0,0);
+    VL_IN8(&clk,0,0);
+    VL_IN8(&rst_p,0,0);
     VL_IN8(&miso_0,0,0);
     VL_IN8(&miso_1,0,0);
     VL_OUT8(&sclk,0,0);
     VL_OUT8(&cs_n,0,0);
-    VL_OUT8(&valid,0,0);
-    VL_OUT16(&data_ch0,11,0);
-    VL_OUT16(&data_ch1,11,0);
+    VL_OUT8(&led1,0,0);
 
     // CELLS
     // Public to allow access to /* verilator public */ items.
@@ -44,19 +43,19 @@ class alignas(VL_CACHE_LINE_BYTES) VPmodAD1Ctrl VL_NOT_FINAL : public VerilatedM
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    VPmodAD1Ctrl___024root* const rootp;
+    VPmodAD1_top___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit VPmodAD1Ctrl(VerilatedContext* contextp, const char* name = "TOP");
-    explicit VPmodAD1Ctrl(const char* name = "TOP");
+    explicit VPmodAD1_top(VerilatedContext* contextp, const char* name = "TOP");
+    explicit VPmodAD1_top(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~VPmodAD1Ctrl();
+    virtual ~VPmodAD1_top();
   private:
-    VL_UNCOPYABLE(VPmodAD1Ctrl);  ///< Copying not allowed
+    VL_UNCOPYABLE(VPmodAD1_top);  ///< Copying not allowed
 
   public:
     // API METHODS
@@ -88,6 +87,7 @@ class alignas(VL_CACHE_LINE_BYTES) VPmodAD1Ctrl VL_NOT_FINAL : public VerilatedM
     /// Re-init after cloning the model at the process level (e.g. fork in Linux)
     /// Re-allocate necessary resources. Called after cloning.
     void atClone() const;
+    std::unique_ptr<VerilatedTraceConfig> traceConfig() const override final;
   private:
     // Internal functions - trace registration
     void traceBaseModel(VerilatedTraceBaseC* tfp, int levels, int options);

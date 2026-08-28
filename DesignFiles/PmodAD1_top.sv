@@ -25,7 +25,8 @@
         output logic       cs_n,
         output logic       led1
     );
-
+    
+    /* verilator lint_off UNUSEDSIGNAL */
     logic [11:0] data_ch0;
     logic [11:0] data_ch1;
     logic        valid;
@@ -49,4 +50,3 @@
     end
 
     endmodule
-   
