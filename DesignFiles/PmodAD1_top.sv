@@ -13,7 +13,8 @@
     Dependencies: SevenSegDriver.sv
                   PmodAD1Ctrl.sv
     
-    Revision History: 1.0 - Initial Design
+    Revision History: 1.0  - Initial Design
+                      1.01 - Updated Output conditions - led
     */
 
     module PmodAD1_top (
@@ -23,8 +24,7 @@
         input  logic       miso_1,
         output logic       sclk,
         output logic       cs_n,
-        output logic [6:0] svseg_1,
-        output logic [6:0] svseg_2
+        output logic       led1
     );
 
     logic [11:0] data_ch0;
@@ -44,6 +44,10 @@
         .valid(valid)
     );
     
+    //Turn on led 1 if input is greater than 1/4 of the supply voltage
+    always_comb @(*) begin
+        led1 = (data_ch0 > 1024) ? 1'b1 : 1'b0;
+    end
 
     endmodule
    
