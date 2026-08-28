@@ -26,12 +26,14 @@
         output logic       cs_n,
         output logic       led1
     );
-
+    
+    /* verilator lint_off UNUSEDSIGNAL */
     logic [11:0] data_ch0;
     logic [11:0] data_ch1;
     logic        valid;
-
-    module PmodAD1Ctrl ctrl (
+    /* verilator lint_on UNUSEDSIGNAL */
+    
+    PmodAD1Ctrl ctrl (
         .clk_fpga(clk),
         .miso_0(miso_0),
         .miso_1(miso_1),
@@ -45,9 +47,8 @@
     );
     
     //Turn on led 1 if input is greater than 1/4 of the supply voltage
-    always_comb @(*) begin
+    always_comb begin
         led1 = (data_ch0 > 1024) ? 1'b1 : 1'b0;
     end
 
     endmodule
-   
